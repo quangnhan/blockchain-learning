@@ -19,7 +19,7 @@ fn main() {
 }
 
 // `fill_vec()` no longer takes `vec: Vec<i32>` as argument - don't change this!
-fn fill_vec() -> Vec<i32> {
+fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
     // Instead, let's create and fill the Vec in here - how do you do that?
     let mut vec = vec;
 
