@@ -1,3 +1,5 @@
 *.exe
 *.pdb
 .vscode
+
+**/node_modules/**
