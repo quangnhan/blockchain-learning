@@ -18,3 +18,8 @@ truffle migrate
 https://docs.web3js.org/guides/web3_eth/eth/#step-3-set-up-web3js-and-connect-to-the-ganache-network
 
 npx ts-node .\getMinter.ts
+
+## Solana
+
+solana config set --url https://api.devnet.solana.com
+solana balance <wallet_public_key>
