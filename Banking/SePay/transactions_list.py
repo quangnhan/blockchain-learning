@@ -1,8 +1,7 @@
 import requests
 
 API_TOKEN = "FJQDBAFNR6BODENYYVFDKL9I8MWPH8SVCBR1OZQY4OPZAGVSQTPTAXEGRW3KW1QH"
-url = "https://my.sepay.vn/userapi/transactions/details"
-transaction_id = "637738"
+url = "https://my.sepay.vn/userapi/transactions/list"
 
 headers = {
     "Content-Type": "application/json",
@@ -10,7 +9,7 @@ headers = {
 }
 
 try:
-    response = requests.get(f"{url}/{transaction_id}", headers=headers)
+    response = requests.get(f"{url}/", headers=headers)
     # Check if the request was successful (status code 200)
     if response.status_code == 200:
         print("Result: ", response.json())
