@@ -15,7 +15,7 @@ contract MemberShip {
     }
 
     modifier onlyOwner() {
-        require(msg.sender == owner);
+        require(msg.sender == owner, "Caller is not contract owner babe!");
         _;
     }
 
